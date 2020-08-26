@@ -1,0 +1,24 @@
+.customers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers-link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid $soc-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke-width: 1px;
+    color: $soc-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}

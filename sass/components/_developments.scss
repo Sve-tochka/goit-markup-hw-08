@@ -1,0 +1,38 @@
+.developments-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.developments-title-item {
+    width: calc((100% - 30px * 2) / 3);
+    position: relative;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        
+        color: $white-color;
+        background-color: $hero-development-background;
+        
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border-radius: 0px 0px 4px 4px;
+        
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03rem;
+        text-transform: uppercase;
+        margin: 0px;
+        bottom: 0;
+    }
+}
+

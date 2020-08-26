@@ -1,0 +1,102 @@
+main {
+    display: block;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    width: calc((100% - 60px) / 3);
+    background-color: $white-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    &:hover,
+    &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+    &:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.catalog-item-info {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.catalog-title {
+    margin: 0;
+    padding-bottom: 4px;
+    color: $primary-text-color;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06rem;
+}
+
+.catalog-type {
+    margin: 0;
+    color: $title-text-color;
+    font-family: $primary-font-family;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03rem; 
+    font-style: normal;
+}
+
+.catalog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+    transition: transform $timing-function;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-thumb {
+    padding: 63px 24px;
+    background-color: $portfolio-text-background;
+    border-radius: 5px 5px 0px 0px;
+    color: $white-color;
+    font-family: $primary-font-family;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03rem;
+    font-style: normal;
+}
+
+.catalog-link:hover .text,
+.catalog-link:focus .text,
+.catalog-item:hover .text,
+.catalog-item:focus .text {
+    transform: translateY(0);
+}
+
+

@@ -1,0 +1,36 @@
+.filtr-catalog {
+    margin-bottom: 34px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    li + li {
+        margin-left: 8px;
+    }
+}
+
+.btn {
+    transition: all $timing-function;
+    background-color: $page-background;
+    color: $primary-text-color;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    &:focus, 
+    &:hover {
+        color: $white-color;
+        background-color: $accent-color;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.filtr {
+    margin: 0;
+    padding: 6px 22px;
+}

@@ -1,0 +1,22 @@
+h1 {
+  margin-right: 85px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.logo { /* Web */
+  color: $accent-color;
+  font-family: $logo-f-f;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.site-logo { /* Studio*/
+  color: $black-color;
+  font-family: $logo-f-f;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}

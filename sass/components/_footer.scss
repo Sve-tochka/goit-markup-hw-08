@@ -1,0 +1,166 @@
+.main-footer {
+    background: $footer-background;
+    .conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 48px;
+        padding-bottom: 28px;
+    }
+}
+
+.footer-logo {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+}
+
+.footer-logo-text {
+    color: $white-color;
+}
+
+.footer-adress {
+    color: $white-color;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03rem;
+    a {
+        color: $footer-adress;
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03rem;  
+    }
+}
+
+address {
+    p {
+        margin-top: 0;
+        margin-bottom: 9px;
+    }
+    a {
+        display: block;
+    }
+}
+
+.footer-soc {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $white-color;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;  
+}
+
+.social-links-item:not(:nth-child(4n)) {
+    margin-right: 10px;
+}
+
+.footer-social-list-link {
+    transition: background-color $timing-function;
+    display: inline-flex;
+    justify-content: center;
+    background-color: $footer-background-soc;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer-icon {
+    fill: $white-color;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-footer {
+    display: inline-flex;
+    padding: 10px 28px;
+    text-decoration: none;  
+    cursor: pointer;
+    color: $white-color;
+    background: $accent-color; 
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;
+    min-width: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-input {
+    background-color: $footer-background;
+    color: $footer-adress;
+    font-family: $primary-font-family;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    padding: 18px 12px;
+}
+
+.footer-send {
+    margin-left: 10px;
+    fill: $white-color;
+}
+
+.btn-icon {
+    background-color: $accent-color;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;
+    vertical-align: middle; /*центрирует иконку по середине*/
+}
+
+.by {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+
+.goit {
+    color: $footer-goit;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    font-style: normal;
+}
+
+

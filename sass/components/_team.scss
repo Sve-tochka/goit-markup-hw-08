@@ -1,0 +1,74 @@
+.team {
+    background-color: $page-background;
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    p {
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.2;  
+        font-family: $primary-font-family;
+        font-style: normal;
+    }
+}
+
+.team-list-item {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    border: #afb1b8;
+    width: calc((100% - 30px * 3) / 4);
+}
+
+.team-info {
+    background-color: $white-color;
+    padding: 30px 32px 24px;
+    text-align: center;
+    h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        color: $primary-text-color;        
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.social-list-link {
+    transition: all $timing-function;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $soc-color;
+    &:hover,
+    &:focus {
+        color: $white-color;
+        background-color: $accent-color;
+    }
+}
+
+.soc-icon-team {
+    fill: currentColor;
+}
