@@ -13,6 +13,23 @@ a {
   display: none;
 }
 
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link:focus,
+.link:hover {
+  color: #2196F3;
+}
+
 .page {
   color: #757575;
   font-family: Roboto, sans-serif, sans-serif;
@@ -63,16 +80,27 @@ a {
 }
 
 .section-title {
-  margin: 0;
-  margin-bottom: 50px;
   color: #212121;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .header {
