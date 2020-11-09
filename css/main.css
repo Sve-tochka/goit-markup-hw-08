@@ -118,6 +118,10 @@ h1 {
   line-height: 1.2;
 }
 
+.page-header {
+  border-bottom: 2px solid #ececec;
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
