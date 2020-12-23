@@ -47,6 +47,7 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 4px solid blueviolet;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
